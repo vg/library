@@ -5,8 +5,8 @@ layout: default
   {% for book in site.data.books  %}
   <article class="book">
     <figure class="book-cover">
-      <a href="{{ book.link }}">
-        <img src="http://covers.openlibrary.org/b/goodreads/{{ book.Book_Id }}-S.jpg" alt="{{ book.Title }}">
+      <a href="https://www.goodreads.com/book/show/{{ book.Book_Id }}">
+        <img src="http://covers.openlibrary.org/b/isbn/{{ book.ISBN }}-S.jpg" alt="{{ book.Title }}">
       </a>
     </figure>
     <div class="book-info">
