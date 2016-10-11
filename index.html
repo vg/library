@@ -6,7 +6,7 @@ layout: default
   <article class="book">
     <figure class="book-cover">
       <a href="https://www.goodreads.com/book/show/{{ book.Book_Id }}">
-        {% if book.ISBN13 %}<img src="http://covers.librarything.com/devkey/c2cbbfc0cf2482bb29c4fe9baae01841/large/isbn/{{ book.ISBN13 }}" alt="{{ book.Title }}">{% endif %}
+        <img src="{% if book.ISBN13 %}http://covers.librarything.com/devkey/c2cbbfc0cf2482bb29c4fe9baae01841/large/isbn/{{ book.ISBN13 }}{% else %}data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7{% endif %}" alt="{{ book.Title }}">
       </a>
     </figure>
     <div class="book-info">
