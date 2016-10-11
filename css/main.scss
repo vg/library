@@ -142,6 +142,10 @@ p.book-author {
  font-weight: normal;
 }
 
+p.book-author:before { 
+  content:"\2014";
+}
+
 /*----- Footer -----*/
 .footer {
   margin-bottom: 100px;
